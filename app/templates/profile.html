@@ -1,0 +1,40 @@
+
+{# <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> #}
+
+{% extends "base.html" %}
+
+
+{% block main %}
+
+<div class="maincontainer">
+
+    <div class="body">
+        <div class="upper">
+            <img src="{{ url_for('static', filename='copium-cat.gif') }}" class="center"/> 
+            <h1>Lenroy Hinds</h1>
+            <p>@Ljacenizer</p>
+            <p>Kingston, Jamaica</p>
+            <p>Joined: {{ date_joined }}</p>
+        </div>
+
+        <div class="lower">
+            <p>I enjoy building things with my hands and have been getting progressively more and more into drone building. For now in my free time i spend it playing action based rogue likes and any online games with the bros whenever possible.</p>
+            <table style="margin:auto; width:20%;">
+                <tr class="row1">
+                    <td>7</td> 
+                    <td>100</td>
+                    <td>250</td>
+                </tr>
+            
+                <tr class="row2">
+                    <td>Posts</td>
+                    <td>Following</td>
+                    <td>Followers</td>
+                </tr>
+            
+            </table>
+            <button type="button" onclick="location.href='https://www.youtube.com/watch?v=BcxHHCgXBd8&ab_channel=TerminalMontageClips';" >Follow</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
